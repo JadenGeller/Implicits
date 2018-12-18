@@ -1,8 +1,12 @@
 from setuptools import setup
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(name='implicits',
     version='1.0.1',
     description='Implicit parameters in Python',
+    long_description=long_description,
     url='https://github.com/JadenGeller/Implicits',
     author='Jaden Geller',
     license='MIT',
