@@ -1,5 +1,5 @@
 # Implicits
-Global state can be hard to reason about, but piping dependencies from function to function is a pain. With implicits, you _explicitly_ which function parameters are _implicit_ dependencies. When you call the function, no need to explicilty provide these parameters; instead, the parameters will be implicitly passed! All that's required is that there exists local variables in scope that match the names of the parameters you're calling.
+Global state can be hard to reason about, but piping dependencies from function to function is a pain. With implicits, you _explicitly_ annotate which function parameters are _implicit_ dependencies, and these parameters are passed as arguments automatically when you call the function! All that's required is that there exists local variables in scope that match the names of the implicits.
 ```python3
 @implicits("current_user")
 def create_task(title, *, current_user):
