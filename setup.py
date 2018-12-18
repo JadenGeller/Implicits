@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='implicits',
-    version='1.0.0',
+    version='1.0.1',
     description='Implicit parameters in Python',
     url='https://github.com/JadenGeller/Implicits',
     author='Jaden Geller',
