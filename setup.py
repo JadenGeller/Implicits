@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(name='implicits',
-    version='1.0.1',
+    version='1.0.2',
     description='Implicit parameters in Python',
     long_description=long_description,
     url='https://github.com/JadenGeller/Implicits',
