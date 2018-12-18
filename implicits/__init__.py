@@ -11,7 +11,7 @@ def _default_args(func):
             if parameter.default is not inspect.Parameter.empty
         ]
 
-def implicit(*implicit_arg_names):
+def implicits(*implicit_arg_names):
     def decorator(func):
         defaults = _default_args(func)
         def wrapper(*args, **kwargs):
